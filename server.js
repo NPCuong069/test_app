@@ -3,6 +3,7 @@ const app = express()
 app.get('/', (req, res) => {
 res.send('Hello, World!')
 })
-app.listen(3000, () => {
-console.log('Server started on port 3000')
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+console.log('Server started on port 4000')
 })
